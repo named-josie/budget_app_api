@@ -20,7 +20,7 @@ transactions.get('/:id', (req, res) => {
   }
 })
 
-transactions.get('/', (req, res) => {
+transactions.post('/', (req, res) => {
   transactionsArray.push(req.body)
   res.json(transactionsArray[transactionsArray.length - 1])
 })

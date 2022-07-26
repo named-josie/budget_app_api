@@ -8,13 +8,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.get('/', (req, res) => {
-  res.send('Welcome to Budget App Backend!')
+  res.send('<h1>Quantum Finance Backend!</h1>')
 })
 app.use((req, res, next) => {
   console.log('REQUEST MADE', req.method, req.url)
   next()
 })
-app.use('/transactions', transactionsController)
+app.use('/transaction', transactionsController)
 app.use('*', (req, res) => {
   res.status(404).send('Oops! Nothing to see here.')
 })

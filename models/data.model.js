@@ -51,11 +51,11 @@ module.exports = [
     },
    
     {
-        item_name: 'Transportation',
+        item_name: 'Metro Card',
         amount: -40,
         date: '02/15/2023',
         from: 'MTA',
-        category: 'Transportation',
+        category: 'Auto & Transport',
       },
       {
         item_name: 'Stuff',
